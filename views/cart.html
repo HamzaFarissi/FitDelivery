@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart | FitDelivery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a href="/index.html">Home</a><a href="/menu.html">Menu</a><a href="/about.html">About</a><a href="/contact.html">Contact</a>
+            <a class="cart-link active" href="/cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="page-intro">
+            <p class="eyebrow">Almost there</p>
+            <h1>Your cart</h1>
+        </section>
+        <div id="cartContents" data-cart-view>
+            <section class="empty-state">
+                <h2>Your cart is empty</h2>
+                <p>Take a look at the menu and find something delicious.</p>
+                <a class="button button-primary" href="/menu.html">Browse the menu</a>
+            </section>
+        </div>
+        <noscript><p class="empty-state">Enable JavaScript to view and update your cart.</p></noscript>
+    </main>
+    <footer><span>© 2026 FitDelivery</span><a href="/contact.html">Questions? Contact us</a></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

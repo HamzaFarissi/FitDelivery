@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitDelivery | Healthy meals for active days</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Good food. Stronger days.</p>
+                <h1>Fuel your day.<br><span>We’ll bring it.</span></h1>
+                <p>Fresh, balanced meals delivered straight to your gym or doorstep.</p>
+                <a class="button button-primary" href="menu.html">Explore the menu</a>
+            </div>
+            <img class="hero-image" src="/images/Delivered-meal.jpg" alt="Freshly prepared healthy meal">
+        </section>
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Made for your routine</p>
+                    <h2>Meals worth showing up for</h2>
+                </div>
+                <a class="text-link" href="menu.html">See all meals →</a>
+            </div>
+            <div class="product-grid" data-product-list="featured"></div>
+            <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+        </section>
+        <section class="benefit-strip">
+            <div><strong>Freshly prepared</strong><span>Made with ingredients you can feel good about.</span></div>
+            <div><strong>Easy ordering</strong><span>Pick your meal and check out in a few steps.</span></div>
+            <div><strong>Training-friendly</strong><span>Balanced options to fit an active lifestyle.</span></div>
+        </section>
+    </main>
+    <footer><span>© 2026 FitDelivery</span><a href="contact.html">Questions? Contact us</a></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

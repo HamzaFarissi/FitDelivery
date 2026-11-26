@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | FitDelivery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="page-intro">
+            <p class="eyebrow">Fresh from our kitchen</p>
+            <h1>Choose your fuel</h1>
+            <p>Balanced, satisfying meals for busy days and hard workouts.</p>
+        </section>
+        <section class="product-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Wholesome and satisfying</p>
+                    <h2>Healthy meals</h2>
+                </div>
+            </div>
+            <div class="product-grid" data-product-list="meals"></div>
+        </section>
+        <section class="product-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Freshly blended</p>
+                    <h2>Fresh juices</h2>
+                </div>
+            </div>
+            <div class="product-grid" data-product-list="juices"></div>
+        </section>
+        <section class="product-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A little something sweet</p>
+                    <h2>Healthy desserts</h2>
+                </div>
+            </div>
+            <div class="product-grid" data-product-list="desserts"></div>
+        </section>
+        <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+        <p class="menu-note">Meal details and availability may change. Please contact us about allergens before ordering.</p>
+    </main>
+    <footer><span>© 2026 FitDelivery</span><a href="contact.html">Questions? Contact us</a></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

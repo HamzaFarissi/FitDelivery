@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something went wrong | FitDelivery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/index.html">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a href="/index.html">Home</a><a href="/menu.html">Menu</a><a href="/cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="empty-state">
+            <p class="eyebrow">Oops</p>
+            <h1>We couldn’t complete that request.</h1>
+            <p><%= message %></p>
+            <a class="button button-primary" href="/index.html">Return home</a>
+        </section>
+    </main>
+    <footer><span>© <%= new Date().getFullYear() %> FitDelivery</span><a href="/contact.html">Contact us</a></footer>
+</body>
+</html>

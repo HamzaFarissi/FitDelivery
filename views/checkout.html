@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FitDelivery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="page-intro">
+            <p class="eyebrow">Demo order</p>
+            <h1>Checkout</h1>
+            <p>Enter delivery details to place a simulated order. No payment information is needed.</p>
+        </section>
+        <section class="empty-state" id="checkoutEmpty" hidden>
+            <h2>Your cart is empty</h2>
+            <p>Add a meal before continuing to checkout.</p>
+            <a class="button button-primary" href="menu.html">Browse the menu</a>
+        </section>
+        <div class="checkout-layout" id="checkoutLayout" hidden>
+            <form class="form-card" id="checkoutForm" novalidate>
+                <h2>Delivery details</h2>
+                <p class="form-error" id="checkoutError" role="alert" hidden></p>
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required maxlength="120">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="255">
+                <label for="phone">Phone (optional)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30">
+                <label for="address">Delivery address</label>
+                <textarea id="address" name="address" autocomplete="street-address" rows="4" required></textarea>
+                <p class="small-note">This is a simulated checkout. No card details are requested or charged.</p>
+                <button class="button button-primary button-full" id="placeOrderButton" type="submit" disabled>Place demo order</button>
+            </form>
+            <aside class="summary-card">
+                <h2>Your order</h2>
+                <div id="checkoutItems"></div>
+                <div class="summary-line summary-total">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">€0.00</strong>
+                </div>
+                <a class="text-link" href="cart.html">Edit cart</a>
+            </aside>
+        </div>
+    </main>
+    <footer><span>© 2026 FitDelivery</span><a href="contact.html">Questions? Contact us</a></footer>
+    <script src="/script.js"></script>
+</body>
+</html>

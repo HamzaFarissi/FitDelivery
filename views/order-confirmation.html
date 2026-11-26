@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order received | FitDelivery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Fit<span>Delivery</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+            <a class="cart-link" href="cart.html">Cart <span class="cart-count"><%= cartCount %></span></a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="confirmation-card" id="confirmationDetails" hidden>
+            <span class="confirmation-icon" aria-hidden="true">✓</span>
+            <p class="eyebrow">Order received</p>
+            <h1>Thanks for choosing FitDelivery.</h1>
+            <p>Your simulated order <strong id="confirmationOrderId"></strong> is confirmed.</p>
+            <p class="confirmation-total">Total: <span id="confirmationTotal"></span></p>
+            <p class="small-note">No payment was taken. This is an assignment demo.</p>
+            <a class="button button-primary" href="menu.html">Back to the menu</a>
+        </section>
+        <section class="empty-state" id="confirmationEmpty" hidden>
+            <h2>No recent order found</h2>
+            <p>Choose meals from the menu to start a simulated order.</p>
+            <a class="button button-primary" href="menu.html">Browse the menu</a>
+        </section>
+    </main>
+    <footer><span>© 2026 FitDelivery</span><a href="contact.html">Questions? Contact us</a></footer>
+    <script src="/script.js"></script>
+</body>
+</html>
